@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     testEnvironment: 'jest-environment-jsdom',
     transform: {
       '^.+\\.jsx?$': 'babel-jest', // Transform JavaScript and JSX files using Babel
