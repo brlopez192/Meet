@@ -1,4 +1,5 @@
-export default {
+// eslint-disable-next-line no-undef
+module.exports = {
     testEnvironment: 'jest-environment-jsdom',
     transform: {
       '^.+\\.jsx?$': 'babel-jest', // Transform JavaScript and JSX files using Babel

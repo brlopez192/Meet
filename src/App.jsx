@@ -1,10 +1,14 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
+import EventList from "./components/EventList";
+import CitySearch from "./components/CitySearch";
 const App = () =>{
   return (
     <>
-    <div>
-
+    <div className="App">
+      <CitySearch />
+      <EventList />
     </div>
     </>
   );
