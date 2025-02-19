@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     testEnvironment: 'jest-environment-jsdom',
     transform: {
       '^.+\\.jsx?$': 'babel-jest', // Transform JavaScript and JSX files using Babel
@@ -9,4 +9,3 @@ module.exports = {
     moduleFileExtensions: ['js', 'jsx'],
     setupFilesAfterEnv: ['<rootDir>/setupTests.js'], // Path to the setup file
    };
-   
