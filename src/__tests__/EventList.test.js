@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { render } from '@testing-library/react';
-import {describe, test, expect, beforeEach} from '@jest/globals';
 import EventList from '../components/EventList';
 
 
