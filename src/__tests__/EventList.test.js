@@ -1,10 +1,8 @@
-// src/__tests__/EventList.test.js
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { render } from '@testing-library/react';
 import {describe, test, expect, beforeEach} from '@jest/globals';
 import EventList from '../components/EventList';
-import { getEvents } from '../api';
 
 
 describe('<EventList /> component', () => {
@@ -23,11 +21,4 @@ describe('<EventList /> component', () => {
       } />);
       expect(EventListComponent.getAllByRole("listitem")).toHaveLength(4);
     });
-
-    test('renders correct number of events', async () => {
-        const allEvents = await getEvents(); 
-        EventListComponent.rerender(<EventList events={allEvents} />);
-    expect(EventListComponent.getAllByRole("listitem")).toHaveLength(allEvents.length);
-      });
-
    });

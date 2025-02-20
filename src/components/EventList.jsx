@@ -1,7 +1,6 @@
 // src/components/EventList.js
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import PropTypes from 'prop-types';
 import Event from "./Event";
 
 
@@ -13,7 +12,5 @@ const EventList = ({ events }) => {
  );
 }
 
-EventList.propTypes = {
-  events: PropTypes.array.isRequired,
-};
+
 export default EventList;
