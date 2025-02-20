@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 import {describe, test, expect, beforeEach} from '@jest/globals';
 import CitySearch from '../components/CitySearch';
 import userEvent from '@testing-library/user-event';
-import { getEvents, extractLocations } from '../api';
+import { extractLocations, getEvents } from '../api';
 
 
 describe('<CitySearch /> component', () => {

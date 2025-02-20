@@ -1,7 +1,6 @@
 // src/components/CitySearch.jsx
 // eslint-disable-next-line no-unused-vars
 import React, { useState} from 'react';
-import PropTypes from 'prop-types';
 
 
 
@@ -50,12 +49,7 @@ const CitySearch = ({ allLocations }) => {
      )
     
   }
-  
-  
-  
-  CitySearch.propTypes = {
-    allLocations: PropTypes.array.isRequired,
-  };
+
   
   export default CitySearch;
 
