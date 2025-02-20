@@ -6,12 +6,23 @@ import NumberOfEvents from './components/NumberOfEvents';
 
 import "./App.css";
 const App = () =>{
+  const [events, setEvents] = useState([]);
+  const [numberOfEvents, setNumberOfEvents] = useState(32);
+  const [allLocations, setAllLocations] = useState([]);
+  const [currentCity, setCurrentCity] = useState("See all cities");
 
   return (
     <>
     <div className="App">
-      <CitySearch />
-      <EventList />
+      <CitySearch
+      allLocations={allLocations} 
+      setCurrentCity={setCurrentCity}
+      />
+      <EventList events={events} />
+      <NumberOfEvents 
+      numberOfEvents={numberOfEvents} 
+      setNumberOfEvents={setNumberOfEvents}
+      /> 
     </div>
     </>
   );
