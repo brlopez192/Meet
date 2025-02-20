@@ -1,17 +1,32 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
-import CitySearch from "./components/CitySearch";
-import EventList from "./components/EventList";
-import NumberOfEvents from "./components/NumberOfEvents";
+import React from 'react';
+import { useEffect, useState } from 'react';
+import CitySearch from './components/CitySearch';
+import EventList from './components/EventList';
+import NumberOfEvents from './components/NumberOfEvents';
+import { getEvents } from './api';
+
+
+import './App.css';
 const App = () =>{
+  const [events, setEvents] = useState([]);
+  const [currentNOE, setCurrentNOE] = useState(32);
+
+  const fetchData = async () => {
+    const allEvents = await getEvents();
+    setEvents(allEvents.slice(0, currentNOE));
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
-    <>
-    <div>
+    <div className="App">
       <CitySearch />
-      <EventList />
       <NumberOfEvents />
+      <EventList events={events} />
     </div>
-    </>
   );
 }
 
