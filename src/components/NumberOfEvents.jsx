@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import App from "../App";
+import { ErrorAlert } from "./Alert";
 
-const NumberOfEvents = ({ setCurrentNOE }) => {
+const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
 
   const [number, setNumber] = useState(32);
 
@@ -9,6 +10,7 @@ const NumberOfEvents = ({ setCurrentNOE }) => {
     const value = event.target.value;
     setNumber(value);
     setCurrentNOE(value);
+    setErrorAlert("");
   }
 
   return (
