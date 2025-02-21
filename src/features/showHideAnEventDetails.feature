@@ -1,4 +1,5 @@
 Feature: Show/Hide an Event’s Details
+
   Scenario: An event element is collapsed by default
     Given the user have just opened the app
     When the user views the events list

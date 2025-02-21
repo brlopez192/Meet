@@ -1,9 +1,10 @@
+import React from 'react';
 import { render, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { loadFeature, defineFeature } from 'jest-cucumber';
 import App from '../App';
 
-const feature = loadFeature('./src/features/showHideAnEventsDetails.feature');
+const feature = loadFeature('./src/features/showHideAnEventDetails.feature');
 defineFeature(feature, test => {
   test('An event element is collapsed by default', ({ given, when, then }) => {
     let AppComponent;
