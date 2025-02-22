@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip,
     ResponsiveContainer
  } from "recharts";
@@ -9,7 +8,7 @@ import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip,
 
     useEffect(() => {
         setData(getData());
-    }, [`${events}`]);
+      }, [`${events}`]);
  
     const getData = () => {
         const data = allLocations.map((location) => {
@@ -39,9 +38,6 @@ import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip,
         </ResponsiveContainer>
     );
  }
- CityEventsChart.propTypes = {
-    allLocations: PropTypes.array.isRequired,
-    events: PropTypes.array.isRequired,
- };
- export default CityEventsChart;
+
+ export default CityEventsChart
 
