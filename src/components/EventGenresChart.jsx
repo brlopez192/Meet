@@ -37,7 +37,7 @@ const EventGenresChart = ({ events }) => {
       <text
         x={x}
         y={y}
-        fill={COLORS[index % COLORS.length]} // Use matching color
+        fill={COLORS[index % COLORS.length]} 
         textAnchor={x > cx ? 'start' : 'end'}
         dominantBaseline="central"
       >
@@ -56,7 +56,6 @@ const EventGenresChart = ({ events }) => {
           label={renderCustomizedLabel}
           outerRadius={130}
         >
-          {/* Apply colors to each slice */}
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}

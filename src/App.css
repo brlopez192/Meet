@@ -94,3 +94,17 @@ input[type="number"] {
   width: 250px;
   z-index: 1000;
  }
+
+ .charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.charts-container > div {
+  width: 100%; 
+}
