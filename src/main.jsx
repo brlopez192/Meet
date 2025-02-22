@@ -7,7 +7,8 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration.js'
 
 atatus.config('6cf9b350f64047c3b49b6f7e5f0e4dec').install();
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,

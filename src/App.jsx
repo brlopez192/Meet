@@ -23,7 +23,7 @@ const App = () => {
 
  useEffect(() => {
   if (navigator.onLine) {
-    setWarningAlert(''); //
+    setWarningAlert('');
   } else {
     setWarningAlert('You are curently Browsing offline');
   }
