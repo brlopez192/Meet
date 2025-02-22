@@ -55,9 +55,9 @@ return (
     <NumberOfEvents 
     setCurrentNOE={setCurrentNOE} 
     setErrorAlert={setErrorAlert} />
-    <CityEventsChart
+    {/* <CityEventsChart
     allLocations={allLocations}
-    events={events} />
+    events={events} /> */}
     <EventList events={events} />
   </div>
 );
