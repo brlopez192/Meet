@@ -8,10 +8,12 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
-    setNumber(value);
+    if (isNaN(value) && value >=0) {
+      setNumber(value);
     setCurrentNOE(value);
     setErrorAlert("");
-  }
+    }
+  };
 
   return (
     <div id="number-of-events">
